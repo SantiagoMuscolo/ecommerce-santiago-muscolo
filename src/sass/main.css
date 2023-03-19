@@ -49,7 +49,7 @@
   font-size: 1.2rem;
 }
 
-.Main {
+/* .Main {
   display: flex;
   justify-content: center;
   margin-top: 5%;
@@ -60,4 +60,4 @@
 .Main h1:hover {
   text-shadow: 1px 5px 10px grey;
   cursor: pointer;
-}/*# sourceMappingURL=main.css.map */
+}# sourceMappingURL=main.css.map */

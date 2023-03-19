@@ -1,5 +1,6 @@
+import { CartWidget } from "./CartWidget";
 
-export function Navbar() {
+export function NavBar() {
     return (
         <>
             <img className="Logo" src="../../../imagenes/logo.png" alt="" />
@@ -10,6 +11,7 @@ export function Navbar() {
                 <li><a href="">Kodomo</a></li>
                 <li><a href="">Shōjo</a></li>
             </ul>
+            <CartWidget />
         </>
     )
 }
