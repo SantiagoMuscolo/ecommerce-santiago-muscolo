@@ -1,0 +1,44 @@
+.Navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-bottom: 2%;
+    background-color: #242424;
+        img{
+        width: 8vw;
+        }
+        .a__presentacion{
+            text-decoration: none;
+            color: white;
+            font-family: 'Bebas Neue', cursive;
+            margin-left: 5%;
+            font-size: 3vw;
+        }
+        i{
+            margin-left: 40%;
+            color: white;
+            cursor: pointer;
+        }
+        .count{
+            margin-left: 1%;
+            color: white;
+        }
+        .list{
+            display: flex;
+            list-style-type: none;
+            margin-left: 1vw;
+            font-family: 'Bebas Neue', cursive;
+            li{
+                padding: 5%;
+            }
+            li:hover{
+                text-shadow: 1px 1px 20px white;
+            }
+            li a{
+                color: grey;
+                text-decoration: none;
+                font-size: 1.2rem;
+            }
+        }
+}
