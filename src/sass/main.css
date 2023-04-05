@@ -22,12 +22,20 @@
   margin-left: 5%;
   font-size: 3vw;
 }
-.Navbar i {
-  margin-left: 40%;
+.Navbar .cartContainer {
+  display: flex;
+  justify-content: end;
+}
+.Navbar .cart {
+  display: flex;
+  position: relative;
+  left: 40vw;
+}
+.Navbar .cart i {
   color: white;
   cursor: pointer;
 }
-.Navbar .count {
+.Navbar .cart .count {
   margin-left: 1%;
   color: white;
 }
@@ -37,27 +45,77 @@
   margin-left: 1vw;
   font-family: "Bebas Neue", cursive;
 }
+.Navbar .list .link {
+  color: grey;
+  padding: 10%;
+}
 .Navbar .list li {
   padding: 5%;
 }
 .Navbar .list li:hover {
   text-shadow: 1px 1px 20px white;
 }
-.Navbar .list li a {
-  color: grey;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
 
-/* .Main {
+.Main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.Main .contador {
   display: flex;
   justify-content: center;
   margin-top: 5%;
-  font-family: "Bebas Neue", cursive;
-  font-size: 2rem;
-  color: black;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.4rem;
 }
-.Main h1:hover {
-  text-shadow: 1px 5px 10px grey;
+.Main .contador button {
+  margin: 3%;
+  padding: 1%;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background-color: #242424;
+  color: white;
   cursor: pointer;
-}# sourceMappingURL=main.css.map */
+}
+.Main .agregarAlCarrito {
+  display: flex;
+  justify-content: center;
+}
+.Main .agregarAlCarrito button {
+  padding: 1%;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #242424;
+  color: white;
+  cursor: pointer;
+}
+.Main .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.Main .container .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.4rem;
+  flex-wrap: wrap;
+  width: 25%;
+  margin-top: 4%;
+}
+.Main .container .card img {
+  width: 40%;
+}
+.Main .container .card p {
+  margin-top: 2%;
+}
+.Main .container .card .detalle {
+  padding: 1%;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #242424;
+  color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

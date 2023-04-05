@@ -5,8 +5,10 @@ export function CartWidget() {
 
     return (
         <>
-        <i className="fa-solid fa-cart-shopping"></i>
-        <div className='count'>{count}</div>
+        <div className='cart'>
+            <i className="fa-solid fa-cart-shopping"></i>
+            <div className='count'>{count}</div>
+        </div>
         </>
     )
 }

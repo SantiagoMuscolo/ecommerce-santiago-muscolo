@@ -15,30 +15,39 @@
             margin-left: 5%;
             font-size: 3vw;
         }
-        i{
-            margin-left: 40%;
-            color: white;
-            cursor: pointer;
+        .cartContainer{
+            display: flex;
+            justify-content: end;
         }
-        .count{
-            margin-left: 1%;
-            color: white;
+        .cart{
+            display: flex;
+            position: relative;
+            left: 40vw;
+            i{
+                color: white;
+                cursor: pointer;
+            }
+            .count{
+                margin-left: 1%;
+                color: white;
+            }
         }
         .list{
             display: flex;
             list-style-type: none;
             margin-left: 1vw;
             font-family: 'Bebas Neue', cursive;
+            .link{
+                color: grey;
+                padding: 10%;
+            }
             li{
                 padding: 5%;
             }
             li:hover{
                 text-shadow: 1px 1px 20px white;
             }
-            li a{
-                color: grey;
-                text-decoration: none;
-                font-size: 1.2rem;
-            }
+            
         }
+
 }
