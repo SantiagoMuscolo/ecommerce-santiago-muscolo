@@ -56,20 +56,26 @@
   text-shadow: 1px 1px 20px white;
 }
 
-.Main {
+body {
+  width: 100%;
+  height: 100%;
+}
+body .Main {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
 }
-.Main .contador {
+body .Main .contador {
   display: flex;
   justify-content: center;
-  margin-top: 5%;
   align-items: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 1.4rem;
+  font-size: 3rem;
+  margin-top: 3%;
 }
-.Main .contador button {
+body .Main .contador button {
   margin: 3%;
   padding: 1%;
   border-radius: 10px;
@@ -77,25 +83,27 @@
   background-color: #242424;
   color: white;
   cursor: pointer;
+  width: 20%;
+  height: 70px;
 }
-.Main .agregarAlCarrito {
+body .Main .agregarAlCarrito {
   display: flex;
   justify-content: center;
 }
-.Main .agregarAlCarrito button {
-  padding: 1%;
+body .Main .agregarAlCarrito button {
+  padding: 5%;
   border-radius: 10px;
   font-size: 1rem;
   background-color: #242424;
   color: white;
   cursor: pointer;
 }
-.Main .container {
+body .Main .container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.Main .container .card {
+body .Main .container .card {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -105,17 +113,44 @@
   width: 25%;
   margin-top: 4%;
 }
-.Main .container .card img {
+body .Main .container .card img {
   width: 40%;
 }
-.Main .container .card p {
+body .Main .container .card p {
   margin-top: 2%;
 }
-.Main .container .card .detalle {
+body .Main .container .card .detalle {
   padding: 1%;
   border-radius: 10px;
   font-size: 1rem;
   background-color: #242424;
   color: white;
   cursor: pointer;
+}
+body .Main .detail {
+  display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 3%;
+  justify-content: center;
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url(https://p4.wallpaperbetter.com/wallpaper/518/375/797/manga-anime-mix-up-hd-wallpaper-preview.jpg);
+  color: white;
+  text-shadow: 1px 1px 30px black;
+}
+body .Main .detail img {
+  width: 23%;
+  box-shadow: 1px 1px 10px white;
+}
+body .Main .detail .contenido-detail {
+  margin-top: 4%;
+  text-align: center;
+  margin-left: 5%;
+}
+body .Main .detail .contenido-detail h5 {
+  font-size: 4rem;
+}
+body .Main .detail .contenido-detail p {
+  text-justify: auto;
+  line-height: 1.5;
+  max-width: 500px;
+  font-size: 1.4rem;
 }/*# sourceMappingURL=main.css.map */
