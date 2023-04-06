@@ -8,7 +8,7 @@ export function Item ({producto}){
                                             <img src={producto.img} alt="" />
                                             <p>precio: {producto.price}$</p>
                                             <p>stock disponible: {producto.stock}</p>
-                                            <Link to={`/detail/${producto.id}`}><button className="detalle">Detalle</button></Link>
+                                            <Link to={`/item/${producto.id}`}><button className="detalle">Detalle</button></Link>
                                         </div>
     )
 }

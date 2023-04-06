@@ -6,21 +6,21 @@ import { mockFetch } from "../../customFetch/mockFetch"
 
 export function ItemListContainer({ greeting }) {
     const [productos, setProductos] = useState([])
-    const { categoria } = useParams()
+    const { categoryId } = useParams()
 
     console.log(productos)
 
     useEffect(() => {
-        if (categoria) {
+        if (categoryId) {
             mockFetch(0)
-                .then((resp) => setProductos(resp.filter(prod => prod.categoria === categoria)))
+                .then((resp) => setProductos(resp.filter(prod => prod.categoryId === categoryId)))
                 .catch((err) => console.log((err)))
         } else {
             mockFetch(2000)
                 .then(resp => setProductos(resp))
                 .catch(err => console.log(err))
         }
-    }, [categoria])
+    }, [categoryId])
 
     return (
         <>
@@ -28,7 +28,7 @@ export function ItemListContainer({ greeting }) {
                 <h1 style={{ display: 'flex', justifyContent: 'center', marginTop: '5%', fontFamily: 'Bebas Neue', fontSize: '2rem' }}>{greeting}</h1>
                 <Contenedor productos={productos}/>
             </div>
-            {/* <Contador /> */}
+
         </>
     )
 }

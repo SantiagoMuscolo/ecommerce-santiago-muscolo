@@ -25,19 +25,23 @@
 .Navbar .cartContainer {
   display: flex;
   justify-content: end;
+  align-items: center;
 }
 .Navbar .cart {
   display: flex;
   position: relative;
   left: 40vw;
+  align-items: center;
 }
 .Navbar .cart i {
   color: white;
   cursor: pointer;
+  width: 30px;
 }
 .Navbar .cart .count {
   margin-left: 1%;
   color: white;
+  font-size: 1.5rem;
 }
 .Navbar .list {
   display: flex;
@@ -51,20 +55,16 @@
 }
 .Navbar .list li {
   padding: 5%;
+  font-size: 1.5rem;
 }
 .Navbar .list li:hover {
   text-shadow: 1px 1px 20px white;
 }
 
-body {
-  width: 100%;
-  height: 100%;
-}
 body .Main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
   overflow: hidden;
 }
 body .Main .contador {
@@ -130,11 +130,15 @@ body .Main .container .card .detalle {
 body .Main .detail {
   display: flex;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  padding: 3%;
   justify-content: center;
+  align-items: center;
   background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url(https://p4.wallpaperbetter.com/wallpaper/518/375/797/manga-anime-mix-up-hd-wallpaper-preview.jpg);
   color: white;
   text-shadow: 1px 1px 30px black;
+  width: 100%;
+  position: relative;
+  min-height: 78.2vh;
+  overflow: hidden;
 }
 body .Main .detail img {
   width: 23%;
@@ -144,6 +148,8 @@ body .Main .detail .contenido-detail {
   margin-top: 4%;
   text-align: center;
   margin-left: 5%;
+  height: 100%;
+  overflow: hidden;
 }
 body .Main .detail .contenido-detail h5 {
   font-size: 4rem;

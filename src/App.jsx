@@ -15,8 +15,8 @@ function App() {
             <div className='Main'>
             <Routes>
               <Route path='/' element= {<ItemListContainer greeting='Bienvenidos a Moukkai' />}/>
-              <Route path='/categoria/:categoria' element= {<ItemListContainer />}/>
-              <Route path='/detail/:id' element= {<ItemDetailContainer />}/>
+              <Route path='/category/:categoryId' element= {<ItemListContainer />}/>
+              <Route path='/item/:id' element= {<ItemDetailContainer />}/>
               <Route path='/cart' element= {<CartContainer />} />
               {/* <Route path='/404notfound' element={<404NotFound/>}/> */}
               {/* <Route path='*' element={<Navigate to={'/404notfound'}/>}/> */}
