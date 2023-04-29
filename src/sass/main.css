@@ -127,6 +127,70 @@ body .Main .container .card .detalle {
   color: white;
   cursor: pointer;
 }
+body .Main .cartContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .Main .cartContainer .cartContainerUl {
+  width: 800px;
+  height: auto;
+}
+body .Main .cartContainer .clear-all {
+  width: 100px;
+  height: 60px;
+  border-radius: 15px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+body .Main .cartContainer .finalizar-compra {
+  width: 100px;
+  height: 60px;
+  background-color: green;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+body .Main .cartContainer .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+}
+body .Main .cartContainer .buttons button {
+  margin-left: 40px;
+}
+body .Main .cartBox {
+  margin-top: 4%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.3rem;
+  width: 100%;
+}
+body .Main .cartBox img {
+  width: 15%;
+}
+body .Main .cartBox img:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 20px black;
+}
+body .Main .cartBox button {
+  width: 50px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+}
 body .Main .detail {
   display: flex;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -159,4 +223,46 @@ body .Main .detail .contenido-detail p {
   line-height: 1.5;
   max-width: 500px;
   font-size: 1.4rem;
+}
+body .Main .cartForm {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url(https://p4.wallpaperbetter.com/wallpaper/518/375/797/manga-anime-mix-up-hd-wallpaper-preview.jpg);
+  background-attachment: fixed;
+  min-height: 78.2vh;
+}
+body .Main .cartForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .Main .cartForm form input {
+  margin-bottom: 10%;
+  padding: 10px;
+  width: 500px;
+  border-radius: 10px;
+}
+body .Main .cartForm form .text {
+  padding: 50px;
+}
+body .Main .cartForm form .confirmarCompra {
+  margin-top: 2%;
+  width: 100px;
+  height: 60px;
+  background-color: green;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+body .Main .checkout {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  height: 70vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
 }/*# sourceMappingURL=main.css.map */

@@ -1,9 +1,13 @@
-import { Contador } from "../ItemCount/Contador"
-import { mockFetch } from "../../customFetch/mockFetch"
+import {Contador} from '../../components/ItemCount/Contador'
+import { useCartContext } from "../../context/CartContext"
 
 export const ItemDetail = ({product}) => {
+    const { addToCart } = useCartContext()
 
-        console.log(product)
+    const onAdd = (quantity) => {
+        addToCart(product, quantity)
+    }
+
         return(
             <>
                 <div className="detail">
@@ -11,7 +15,7 @@ export const ItemDetail = ({product}) => {
                     <div className="contenido-detail">
                         <h5>{product.name}</h5>
                         <p>{product.description}</p>
-                        <Contador />
+                        <Contador onAdd={onAdd} initial={1} max={product.stock} />
                     </div>
                 </div>
             </>

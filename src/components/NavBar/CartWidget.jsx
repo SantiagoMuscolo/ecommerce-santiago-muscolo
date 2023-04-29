@@ -1,13 +1,14 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { useCartContext } from '../../context/CartContext'
 
 export function CartWidget() {
-    const[count, setCount] = useState(0)
+    const {totalProducts} = useCartContext()
 
     return (
         <>
         <div className='cart'>
             <i className="fa-solid fa-cart-shopping"></i>
-            <div className='count'>{count}</div>
+            <div className='count'>{totalProducts()}</div>
         </div>
         </>
     )

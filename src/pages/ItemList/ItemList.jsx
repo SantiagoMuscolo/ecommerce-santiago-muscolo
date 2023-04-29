@@ -1,6 +1,6 @@
-import { mockFetch } from "../../customFetch/mockFetch";
+import { mockFetch } from "../../Hooks/mockFetch";
 import { useEffect, useState } from "react";
-import { Item } from "../Item/Item";
+import { Item } from "../../components/Item/Item";
 
 
 export function Contenedor ({productos}){
@@ -9,7 +9,7 @@ export function Contenedor ({productos}){
         <div className="container">
             {
                 productos.length !== 0 ?
-                productos.map(producto => <Item key = {producto.id} producto = {producto}/>
+                productos && productos.map(producto => <Item key = {producto.id} producto = {producto}/>
                                     )
                 :
                     <h2>...cargando</h2>

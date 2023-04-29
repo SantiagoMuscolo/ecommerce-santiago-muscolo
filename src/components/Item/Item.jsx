@@ -1,4 +1,3 @@
-import { mockFetch } from "../../customFetch/mockFetch";
 import { Link } from "react-router-dom";
 
 export function Item ({producto}){

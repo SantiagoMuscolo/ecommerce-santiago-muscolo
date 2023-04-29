@@ -1,19 +1,12 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-export function Contador(){
+export function Contador({onAdd, initial, max}){
         const[count, setCount] = useState(0)
 
-        const increment = () => {
-            setCount(count + 1)
-        }
+        const increment = () => count < max && setCount(count + 1)
 
-        const decrement = () => {
-            setCount(count - 1)
-
-            if(count <= 0){
-                setCount(0)
-            }
-        }
+        const decrement = () => count > initial && setCount(count - 1)
 
     return(
         <>
@@ -23,7 +16,7 @@ export function Contador(){
             <button onClick={decrement}>-</button>
         </div>
         <div className="agregarAlCarrito">
-            <button>Agregar al carrito</button>
+            <Link to='/cart'><button onClick={() => onAdd(count)}>Agregar al carrito</button></Link>
         </div>
         </>
     )
